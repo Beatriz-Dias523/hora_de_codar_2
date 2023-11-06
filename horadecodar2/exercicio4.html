@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var numero1 = parseFloat(prompt("Digite o primeiro número?"));
+       var numero2 = parseFloat(prompt("Digite o segundo número?"));
+       var numero3 = parseFloat(prompt("Digite o terceiro número?"));
+
+       while (numero1 === numero2 || numero1 === numero3 || numero2 === numero3) {
+  alert('Os valores não podem ser iguais. Recarregue a página e insira valores diferentes.');
+         numero1 = parseFloat(prompt("Digite o primeiro número?"));
+         numero2 = parseFloat(prompt("Digite o segundo número?"));
+         numero3 = parseFloat(prompt("Digite o terceiro número?"));
+} 
+
+       var resultado1 = numero1 + numero2;
+       var resultado2 = numero2 + numero3;
+       var resultado3 = numero3 + numero1;
+
+    if (numero1 && numero2 > numero3){
+        alert("O maior é" + resultado1);
+    }else if (numero2 && numero3 > numero1){
+        alert ("O maior é " + resultado2);
+    }else if (numero3 && numero1 > numero2){
+        alert ("O maior é" + resultado3);
+    }else;
+      
+       
+    </script>
+
+</body>
+</html>

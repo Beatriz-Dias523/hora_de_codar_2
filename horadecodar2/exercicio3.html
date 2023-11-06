@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var nome = (prompt('Me informe seu nome?'));
+         alert("Olá," + nome);
+
+
+        var numero1 = parseFloat(prompt("Coloque o primeiro número?"));
+        var numero2 = parseFloat(prompt("Coloque o segundo número?"));
+        var numero3 = parseFloat(prompt("Coloque o terceiro número?"));
+    
+        while (numero1 === numero2 || numero1 === numero3 || numero2 === numero3){
+  alert('Os valores não podem ser iguais. Recarregue a página e insira valores diferentes.');
+         numero1 = parseFloat(prompt("Coloque o primeiro número?"));
+         numero2 = parseFloat(prompt("Coloque o segundo número?"));
+         numero3 = parseFloat(prompt("Coloque o terceiro número?"));
+        } 
+        
+if (numero1 > numero2 && numero1 > numero3) {
+  alert("O maior valor é: " + numero1);
+} else if (numero2 > numero1 && numero2 > numero3) {
+  alert("O maior valor é: " + numero2);
+} else{
+  alert("O maior valor é: " + numero3);
+}
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

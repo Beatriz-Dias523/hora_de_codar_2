@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var valor1 = parseInt(prompt("Informe o primeiro valor inteiro:"));
+var valor2 = parseInt(prompt("Informe o segundo valor inteiro:"));
+
+var operacao = parseInt(prompt("Escolha uma operação:\n1. Adição\n2. Subtração\n3. Divisão\n4. Multiplicação"));
+
+var resultado;
+
+if (operacao === 1) {
+    resultado = alert("O resultado da soma é " + valor1 + valor2 );
+
+}else if (operacao === 2) {
+    resultado = alert("O resultado da subtração é " + valor1-valor2)
+
+} else if (operacao === 3) {
+    resultado = alert("O resultado da divisão é " + valor1/valor2);
+ 
+}else if (operacao === 4) {
+    resultado = alert ("O resultado da multiplicação é" + valor1*valor2)
+} else 
+    alert("opção inválida. Por favor, escolha uma operação válida (1 a 4).");
+
+
+if (resultado !== undefined) {
+} 
+    
+
+    </script>
+</body>
+</html>

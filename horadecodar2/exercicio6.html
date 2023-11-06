@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valor1 = parseFloat(prompt("Informe o primeiro número?"));
+        var valor2 = parseFloat(prompt("Informe o segundo número?"));
+        var valor3 = parseFloat(prompt("Informe o terceiro número?"));
+        var valor4 = parseFloat(prompt("Informe o primeiro número?"));
+        
+        while (valor1 === valor2 || valor1 === valor3 || valor2 === valor3) {
+            alert('Os valores não podem ser iguais. Recarregue a página e insira valores diferentes.');
+            valor1 = parseFloat(prompt("Informe o primeiro número?"));
+            valor2 = parseFloat(prompt("Informe o segundo número?"));
+            valor3 = parseFloat(prompt("Informe o terceiro número?"));
+            valor4 = parseFloat(prompt("Informe o primeiro número?"));
+        }
+
+        if (valor1 > valor2 && valor1 > valor3 && valor1 > valor4) {
+  maiorValor = valor1;
+} else if (valor2 > valor3 && valor2 > valor4) {
+  maiorValor = valor2;
+} else if (valor3 > valor4) {
+  maiorValor = valor3;
+} else {
+  maiorValor = valor4;
+}
+
+alert ("O primero valor é " + valor1);
+alert ("O ultimo valor é " + valor4 );
+alert ("o maior valor " + maiorValor);
+
+        
+    </script>
+</body>
+</html>
